@@ -11,5 +11,8 @@ sudo apt update && \
 echo "Upgrading pip"
 pip install --upgrade pip
 
+pip install nbdime
+nbdime config-git --enable --global
+
 echo "Installing requirements"
 pip install -r requirements.txt
