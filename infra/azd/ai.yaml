@@ -82,3 +82,13 @@ deployments:
       capacity: 8
     regions:
       - northcentralus
+  - name: deepsink-r1
+    platform: serverless
+    roles:
+      - teacher
+    model:
+      api: chat
+      registry: azureml-deepseek
+      name: DeepSeek-R1
+    regions:
+      - westus3
